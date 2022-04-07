@@ -10,6 +10,13 @@
   <h1>Hello from HTML!</h1>
   <div id="app">
     <h1>{{ message }}</h1>
+    <!-- <img src="https://i.ibb.co/59C7PD9/zoolander.jpg"> -->
+    <h2>Movies</h2>
+    <div v-for="movie in movies">
+      <p>{{ movie }}</p>
+    </div>
+    <input type="text" v-model="newMovie">
+    <button v-on:click="addNewMovie">Add movie</button>
   </div>
 </body>
 </html>

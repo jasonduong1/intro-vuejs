@@ -4,7 +4,14 @@ var App = {
     return {
       message: "Hello from JavaScript!",
       movies: ["Your Name.", "The Prestige", "Avengers: Endgame"],
+      newMovie: "",
     };
+  },
+  methods: {
+    addNewMovie: function () {
+      this.movies.push(this.newMovie);
+      this.newMovie = "";
+    },
   },
 };
 
